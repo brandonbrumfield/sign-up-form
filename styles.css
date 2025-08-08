@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Norse";
+    src: url("Norse-Bold.otf") format('opentype');
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+    
+    
+    
+}
+
+.field_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+
+.field_row {
+    display: flex;
+}
+
+
+.div_one {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url("photo-1585202900225-6d3ac20a6962.avif");
+    
+    
+
+}
+
+.odin_banner {
+    font-family: "Norse";
+    height: 150px;
+    margin-top: 250px;
+    background: rgba(11, 11, 11, 0.6);
+    padding: 50px;
+    align-items: center;
+    
+}
+
+.odin_logo {
+    width: 150px;
+    height: auto;
+
+}
+
+.odin_title {
+    font-size: 100px;
+    color: rgb(243, 243, 243);
+}
+
+.div_two {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.top {
+    
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.middle {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    padding: 50px;
+    padding-top: 10px;
+    box-shadow: 0px 5px 5px rgba(11, 11, 11, 0.4);
+    position: relative;
+
+}
+
+.bottom {
+    
+    height: 30vh;
+    padding: 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.odin_banner {
+    display: flex;
+    justify-content: center;
+}
+
+.photo_cred {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
