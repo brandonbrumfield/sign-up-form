@@ -25,10 +25,12 @@
     <div class="div_two">
 
         <div class="top">
-            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
-                <br><br>
-                You know you want to.
-            </h1>
+            <div class="top_text">
+                <h1>This is not a real online service! This service can help you realize your deepest dreams. Sign up now to get started.
+                    <br><br>
+                    You <em>know</em> you want to.
+                </h1>
+            </div>
             
 
         </div>
@@ -37,16 +39,16 @@
         <div class="middle">
             <h1>Let's do this!</h1>
             <div class="field_container">
-                <form action="example.com/path" method="get" class="signup_form">
+                <form action="" method="get" class="signup_form" id="form">
                     <div class="field_row">
                         <div class="field">
                             <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required placeholder="Max">
                         </div>
 
                         <div class="field">
                             <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required placeholder="Smith">
                         </div>
                     </div>
 
@@ -54,12 +56,12 @@
 
                         <div class="field">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
                         </div>
 
                         <div class="field">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" required pattern="^\d{3}-?\d{3}-?\d{4}$" placeholder="xxx-xxx-xxxx">
                         </div>
                     </div>
 
@@ -67,22 +69,22 @@
 
                         <div class="field">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" class="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="atleast8lettersonenumber">
                         </div>
 
                         <div class="field">
                             <label for="password">Confirm Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" class="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="atleast8lettersonenumber">
                         </div>
                     </div>
-
                 </form>
+                
             </div>
         </div>
 
         <div class="bottom">
-            <button>Create Account</button>
-            <div>Already have an account? Log in</div>
+            <button type="submit" form="form">Create Account</button>
+            <div class="login">Already have an account? <a href="">Log in</a></div>
         </div>
     </div>
 
