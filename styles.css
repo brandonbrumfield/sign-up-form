@@ -3,20 +3,48 @@
     src: url("Norse-Bold.otf") format('opentype');
 }
 
+
+input {
+    
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 5px;
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+input:user-invalid {
+    outline: none;
+    border-color: red;
+       
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    
+}
+
+input:valid {
+    outline:none;
+    border-color: green;
+}
+
+
 body {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
-}
-
-input {
-    height: 1.5rem;
-    font-size: 1.2rem;
+    font-family: sans-serif;
 }
 
 label {
     font-size: 1.2rem;
+    margin-bottom: 0.2rem;
 }
 
 .field {
@@ -41,12 +69,13 @@ label {
 
 .field_row {
     display: flex;
+    gap: 100px;
 }
 
 
 .div_one {
     display: flex;
-    width: 50vw;
+    width: 30vw;
     height: 100vh;
     flex-direction: column;
     background-image: url("photo-1585202900225-6d3ac20a6962.avif");
@@ -85,12 +114,43 @@ label {
 }
 
 .top {
-    
     padding: 50px;
     background-color: rgb(243, 243, 243);
+    font-size: 0.9rem;
 
 }
 
+.top_text {
+    max-width: 110ch;
+    
+}
+
+button {
+    all: unset;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    background-color: rgb(54, 133, 57);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(54, 133, 57);
+    font-weight: bold;
+}
+
+.login{
+    font-size:1.2rem;
+}
 .middle {
     
     display: flex;
@@ -101,6 +161,7 @@ label {
     padding-top: 10px;
     box-shadow: 0px 5px 5px rgba(11, 11, 11, 0.4);
     position: relative;
+    
 
 }
 
@@ -122,4 +183,8 @@ label {
     justify-content: center;
     margin-top: auto;
     margin-bottom: 20px;
+}
+
+.top, .middle, .bottom {
+    padding-left: 8rem;
 }
